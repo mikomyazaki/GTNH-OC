@@ -35,7 +35,7 @@ local x,y,z = nav.getPosition()
 
 local y_dist = y-82.5
 for i = 1,y_dist,1 do
-    if abs(y_dist) > 0 then
+    if math.abs(y_dist) > 0 then
         robot_api.down()
     else
         robot_api.up()
@@ -45,7 +45,7 @@ end
 face(sides.west)
 local x_dist = x-82.5
 for i = 1,x_dist,1 do
-    if abs(x_dist) > 0 then
+    if math.abs(x_dist) > 0 then
         robot_api.back()
     else
         robot_api.forward()
@@ -55,7 +55,7 @@ end
 face(sides.north)
 local z_dist = z-44.5
 for i = 1,z_dist,1 do
-    if abs(z_dist) > 0 then
+    if math.abs(z_dist) > 0 then
         robot_api.back()
     else
         robot_api.forward()
