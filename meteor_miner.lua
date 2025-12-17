@@ -3,7 +3,7 @@ local nav = component.navigation
 local robot_api = require("robot")
 local sides = require("sides")
 
-function face (direction)
+local function face (direction)
     while nav.getFacing() ~= direction do
         robot_api.turnRight()
     end
