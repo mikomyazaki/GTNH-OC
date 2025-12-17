@@ -32,10 +32,10 @@ while nav.getFacing() ~= sides.north do
 end
 
 for i=1,x-28.5,1 do
-    robot_api.back()
+    robot_api.forward()
 end
 
-robot_api.turnLeft()
+robot_api.turnRight()
 
 for i=1,z-(-44.5),1 do
     robot_api.forward()
