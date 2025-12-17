@@ -1,4 +1,5 @@
 local component = require("component")
+local nav = component.navigation
 local robot_api = require("robot")
 local sides = require("sides")
 
@@ -20,13 +21,13 @@ for i = 1,3,1 do
 end
 
 -- Move to start waypoint
-local x,y,z = component.navigation.getPosition()
+local x,y,z = nav.getPosition()
 
 for i = 1,y-82.5,1 do
     robot_api.down()
 end
 
-while component.navigation.getFacing() ~= sides.north do
+while nav.getFacing() ~= sides.north do
     robot_api.turnLeft()
 end
 
