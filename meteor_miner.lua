@@ -15,7 +15,7 @@ end
 -- +z is south, -z is north
 
 -- Do some movement
-face(sides.east
+face(sides.east)
 for i = 1,5,1 do
     robot_api.forward()
 end
