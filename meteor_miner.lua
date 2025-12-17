@@ -1,5 +1,4 @@
 local component = require("component")
-local robot = component.robot
 local sides = require("sides")
 
 -- Find location of start waypoint
