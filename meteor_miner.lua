@@ -26,7 +26,7 @@ for i = 1,y-82.5,1 do
     robot_api.down()
 end
 
-while robot_api.navigation.getFacing() ~= sides.north do
+while component.navigation.getFacing() ~= sides.north do
     robot_api.turnLeft()
 end
 
